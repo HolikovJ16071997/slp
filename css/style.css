@@ -1,3 +1,6 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* globol */
 html{
     box-sizing: border-box;
@@ -18,8 +21,11 @@ body{
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #fff;
-    color: #222;
+    background-color: #141414;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 img{
     max-width: 100%;
@@ -28,11 +34,11 @@ img{
 
 /* conteiner */
 
-.conteiner{
+.container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -40,4 +46,83 @@ img{
 /* main_content */
 .main_content{
     flex-grow: 1;
+}
+/* Card */
+
+.box-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  height: 100vh;
+}
+.card {
+text-align: center;
+width: 384px;
+border-radius: 12px;
+background: #1f1f1f;
+padding: 40px ;
+}
+.img-profile__pic {
+    padding: 0;
+    width: 88px;
+    height: 88px;
+    border-radius:44px;
+    -webkit-border-radius:44px;
+    -moz-border-radius:44px;
+    -ms-border-radius:44px;
+    -o-border-radius:44px;
+}
+.name-location {
+    margin: 0;
+    padding: 0;
+}
+.titel {
+    font-weight: 600;
+    font-style:Bold;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+.description {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    color: #c4f82a;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.bio {
+    margin: 0;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+}
+.card-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+}
+.card-item:not(:last-child)
+{
+    margin-bottom: 16px;
+}
+.card-item {
+    background: #333;
+    color: #fff;
+    list-style: none;
+    border-radius: 8px;
+    opacity: 1;
+    padding: 12px 24px;
+    
+}
+.card-item:hover {
+   background: #c4f82a; 
+    color: #1f1f1f;
+}
+
+.card-link {
+    color: inherit;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    text-decoration: none;
 }
